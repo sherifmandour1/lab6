@@ -4,7 +4,7 @@ CC       = gcc
 CFLAGS   = -std=gnu99 -Wall -Wextra -g -DLOG_USE_COLOR
 
 LINKER   = gcc
-LFLAGS   =
+LFLAGS   = -lpthread
 
 SRCDIR   = src
 OBJDIR   = obj
