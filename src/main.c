@@ -40,19 +40,6 @@ pthread_t *add_thread(pthread_t *threads[], int *thread_count, int *thread_size)
 }
 
 
-// //this functions is responsible for creating sockets to connect to the clients
-// int* add_socket(int *sockets[], int *socket_count, int *socket_size) {
-//     // If we don't have room, add more space in the threads array
-//     if (*socket_count == *socket_size) {
-//         *socket_size *= 2; // Double it
-
-//         *sockets = realloc(*sockets, sizeof(**sockets) * (*socket_size));
-//     }
-
-//     int *new_socket = &(*sockets)[*socket_size];
-//     (*socket_count)++;
-//     return new_socket;
-// }
 
 //handling client requests
 void *handle_client(void *arg) {
